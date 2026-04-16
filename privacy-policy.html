@@ -180,8 +180,8 @@
   <h1>Privacy Policy</h1>
   <div class="meta">
     <strong>Effective Date:</strong> 24 March 2026 &nbsp;|&nbsp;
-    <strong>Last Updated:</strong> 24 March 2026 &nbsp;|&nbsp;
-    <strong>Version:</strong> 1.0
+    <strong>Last Updated:</strong> 16 April 2026 &nbsp;|&nbsp;
+    <strong>Version:</strong> 1.1
   </div>
 
   <!-- TABLE OF CONTENTS -->
@@ -289,7 +289,7 @@
   <p>This information is used solely to provide support, debug issues, and understand compatibility across devices.</p>
 
   <h3>4.6 Subscription Information</h3>
-  <p>If you purchase a paid subscription (Plus or Premium), Google Play Billing processes your payment. We do not receive or store your payment card details, billing address, or any financial information. We only receive a confirmation of your subscription tier and its validity period from Google Play, which is stored in encrypted local storage on your device.</p>
+  <p>If you purchase a paid subscription (Plus or Premium), Google Play Billing processes your payment. We do not receive or store your payment card details, billing address, or any financial information. We only receive a confirmation of your subscription tier and its validity period from Google Play. This confirmation is stored in two places: encrypted local storage on your device, and your user profile in Firebase Firestore — solely to allow your subscription to be restored if you reinstall the App on a new device.</p>
 
   <!-- 5 -->
   <h2 id="s5">5. How We Collect Information</h2>
@@ -366,7 +366,7 @@
     <tr><td>Filter rules (prefix, suffix, full number, country, whitelist, time rules, regex)</td><td>On your device only (Room/SQLite local database)</td><td>Yes — directly in the App</td></tr>
     <tr><td>DND settings</td><td>On your device only</td><td>Yes — directly in the App</td></tr>
     <tr><td>Blocked call log</td><td>On your device only</td><td>Yes — by uninstalling or clearing App data</td></tr>
-    <tr><td>Subscription tier</td><td>On your device only (encrypted)</td><td>Automatically cleared if subscription lapses</td></tr>
+    <tr><td>Subscription tier and validity</td><td>On your device (encrypted) and in your Firebase Firestore profile (cloud) — for reinstall restoration</td><td>Automatically cleared locally if subscription lapses; removed from Firestore on account deletion</td></tr>
     <tr><td>User profile (name, email, phone number, device info)</td><td>Firebase Firestore (Google Cloud)</td><td>Yes — by submitting a deletion request to us</td></tr>
     <tr><td>Community Spam Database entries</td><td>Firebase Realtime Database (Google Cloud)</td><td>Entries are anonymised and not linked to your identity — individual deletion is not applicable</td></tr>
   </table>
@@ -523,7 +523,7 @@
   </div>
 
   <p style="margin-top:48px; font-size:13px; color:#999; text-align:center;">
-    © 2026 SpamCrusher. All rights reserved. &nbsp;|&nbsp; Version 1.0 &nbsp;|&nbsp; Effective 24 March 2026
+    © 2026 SpamCrusher. All rights reserved. &nbsp;|&nbsp; Version 1.1 &nbsp;|&nbsp; Last Updated 16 April 2026
   </p>
 
 </div>
